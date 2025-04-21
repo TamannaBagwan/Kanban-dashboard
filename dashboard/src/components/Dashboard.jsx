@@ -74,10 +74,14 @@ const Dashboard = () => {
   return (
     <Box sx={{ p: 3 }}>
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <Typography variant="h4" gutterBottom>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{ fontWeight: "bold", color: "#2e3c48" }}
+        >
           Kanban Dashboard
         </Typography>
-        <Button variant="contained" onClick={() => setOpenModal(true)}>
+        <Button variant="contained" sx={{m:2}} onClick={() => setOpenModal(true)}>
           Add New Task
         </Button>
       </Box>

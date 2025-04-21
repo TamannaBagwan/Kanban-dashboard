@@ -44,7 +44,7 @@ const TaskCard = ({ task, index, onDelete }) => {
             >
               {task.title}
               <IconButton
-                onClick={() => onDelete(task.id)} // Call onDelete with task ID
+                onClick={() => onDelete(task.id)} 
                 sx={{ color: "red" }}
               >
                 <DeleteIcon />
